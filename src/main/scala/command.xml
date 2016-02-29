@@ -1,0 +1,15 @@
+<?xml encoding="UTF-8" version="1.0" ?>
+<configuration>
+
+    <command>
+        <css>css query</css>
+        <type>String</type>
+        <list>false</list>
+        <xpath></xpath>
+        <filter>
+            <command index="0">trim</command>
+            <command index="1">substring:0:1</command>
+        </filter>
+    </command>
+
+</configuration>
