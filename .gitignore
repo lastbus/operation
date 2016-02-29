@@ -1,0 +1,27 @@
+*.class
+
+#IDEA
+*.iml
+*.ipr
+*.iws
+.idea/*
+
+# Eclipse
+.classpath
+.project
+.setting
+*.jpage
+
+#building
+target
+build
+test-output
+.surefire-*
+
+.DS_Store
+
+# package Files
+*.jar
+*.war
+*.ear
+
