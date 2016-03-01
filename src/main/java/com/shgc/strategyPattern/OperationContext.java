@@ -1,5 +1,7 @@
 package com.shgc.strategyPattern;
 
+import org.jsoup.nodes.Element;
+
 import java.util.Map;
 
 /**
@@ -27,9 +29,9 @@ public class OperationContext {
      * @return
      * @throws Exception
      */
-    public String execute(String command, String... s) throws Exception {
-        if(command.equals("select")) return operationMap.get(command).execute(s);
-        if(command.equals("substring")) return operationMap.get(command).execute(s);
+    public String execute(String command, Element element, String... s) throws Exception {
+        if(command.equals("select")) return operationMap.get(command).execute(command, element, s);
+        if(command.equals("substring")) return operationMap.get(command).execute(command, element, s);
         else throw new Exception("cannot find command: " + command);
     }
 
