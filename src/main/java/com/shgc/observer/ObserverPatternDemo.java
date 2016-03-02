@@ -35,7 +35,7 @@ public class ObserverPatternDemo {
 
     static class Consumer implements Observer {
 
-        @Override
+
         public void update(Observable o, Object arg) {
             MilkProvider m = (MilkProvider) arg;
             System.out.println("haa, thank you for providing milk for us." + o + " , " + m.getInt());
