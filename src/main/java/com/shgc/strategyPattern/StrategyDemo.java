@@ -18,9 +18,9 @@ public class StrategyDemo {
         operationFactory.addCommandOperation("substring", new SubstringOperation());
         OperationContext operationContext = new OperationContext(operationFactory.getOperationMap());
 
-        Stack<String> stack = new Stack<>();
-        stack.addElement("");
-        stack.pop();
+//        Stack<String> stack = new Stack<>();
+//        stack.addElement("");
+//        stack.pop();
 
         System.out.println(operationContext.execute(Command.SELECT, new Element(Tag.valueOf(""), ""), "abc"));
         System.out.println(operationContext.execute(Command.SUBSTRING, new Element(Tag.valueOf(""), ""), "abc", "3"));
